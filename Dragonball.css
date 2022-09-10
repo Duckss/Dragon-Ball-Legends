@@ -1,0 +1,185 @@
+.GOD {
+    /* Background of the GOD Parent div*/
+    background-color: rgb(181, 176, 176);
+}
+
+li {
+    animation: P 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.card {
+    background-color: rgb(181, 176, 176);
+    margin: 10px;
+}
+
+.First-P {
+    /*Introduction*/
+    animation: P 1s;
+    animation-delay: 1s;
+    opacity: 0;
+
+    animation-fill-mode: forwards;
+}
+
+.Second-P {
+    /*Characters */
+    animation: P 1s;
+    opacity: 0;
+    transform: translateY(-5px);
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.Third-P {
+    /*Technicalities*/
+    animation: P 1s;
+    opacity: 0;
+    transform: translateY(-5px);
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.H1 {
+    /*Title*/
+    padding: 10px;
+    text-align: center;
+    color: rgb(81, 57, 57);
+    animation: header 1s;
+    animation-fill-mode: forwards;
+}
+
+.H2 {
+    /* introduction */
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    font-weight: bold;
+    animation: header 1s;
+    animation-fill-mode: forwards;
+}
+
+.H3 {
+    /* Lesson 1: characters */
+    text-align: center;
+    font-weight: bold;
+    position: sticky;
+    top: 0px;
+    animation: header 1s;
+    animation-fill-mode: forwards;
+}
+
+.P4 {
+    /* Lesson 2: technicalities */
+    text-align: center;
+}
+
+.H4 {
+    text-align: center;
+    font-weight: bold;
+    position: sticky;
+    top: 0px;
+    animation: header 1s;
+    animation-fill-mode: forwards;
+}
+
+body {
+    /* The background of the whole website */
+
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: url("/Images/First.jpg");
+}
+
+.parent {
+    /* flex for pictures */ /* reminder: add a video clip to each of the bullet points for references*/
+    display: flex;
+    animation: P 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.ones {
+    color: red;
+}
+
+.one {
+    color: yellow;
+}
+
+.two {
+    color: green;
+}
+
+.three {
+    color: blue;
+}
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+}
+
+.Cont {
+    display: inline-grid;
+    border: solid;
+    width: 200px;
+    height: 244px;
+    padding: 20px;
+    margin: 5px;
+    animation: P 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.H5 {
+    /* Lesson 5: Mindgames*/
+    text-align: center;
+    font-weight: bold;
+    position: sticky;
+    top: 0px;
+    animation: header 1s;
+    animation-fill-mode: forwards;
+}
+
+.Fourth-P {
+    animation: P 1s;
+    opacity: 0;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes P {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes header {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
